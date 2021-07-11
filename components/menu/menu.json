@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_menu_menus",
+  "info": {
+    "name": "menu",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "logo_text": {
+      "type": "text",
+      "required": true
+    },
+    "menu_link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.menu-links",
+      "required": true
+    },
+    "logo_link": {
+      "type": "string",
+      "required": true
+    },
+    "open_in_new_tap": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
