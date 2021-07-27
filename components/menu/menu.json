@@ -21,12 +21,6 @@
       "type": "text",
       "required": true
     },
-    "menu_link": {
-      "type": "component",
-      "repeatable": true,
-      "component": "menu.menu-links",
-      "required": true
-    },
     "logo_link": {
       "type": "string",
       "required": true
@@ -35,6 +29,11 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.menu-links"
     }
   }
 }
